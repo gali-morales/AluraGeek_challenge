@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex: 1; 
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Formulario*/
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.form-agregar-prod{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input{
+    width: 100%;
+    padding: 1em;
+    margin-top: .5em;
+}
+
+/*Botones*/
+.botones{
+    display: flex;
+    justify-content: center;
+}
+

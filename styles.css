@@ -1,0 +1,143 @@
+:root {
+    --button-bg-color: #002b68ab;
+    --button-hover-bg-color: #f17508ab; 
+    --button-active-bg-color: #eaba54;
+    --light-area: rgb(244, 251, 255);
+    --span-color: rgba(173, 211, 247, 0.735);
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("quicksand/Quicksand-VariableFont_wght.ttf") format('truetype');
+    font-style: normal;
+  }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-image: url(img/Backgroudn_AluraGeek.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    background-image: url('img/Banner_AluraGeek.png');
+    background-size: cover;
+    background-position: center;
+    height: 25%;
+    padding-top: 200px;
+    width: 100%;
+}
+
+/*Formulario*/
+.title{
+    font-family: 'Zen Dots', sans-serif;
+    color: var(--light-area);
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 5px;
+    font-size: 100%;
+    text-shadow: 0 0 8px var(--light-area); 
+}
+
+.form_productos{
+    font-family: 'Quicksand';
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(212, 144, 35, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.form-agregar-prod{
+    margin: 10px;
+    width: 300px;
+}
+
+.form-input{
+    margin: 7px 0 7px 0;
+    background: rgba(129, 180, 242, 0.1);
+    outline: none;
+    border: 1px solid var(--light-area);
+    border-radius: 20px;
+    border:1px solid rgba(212, 144, 35, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--light-area);
+    letter-spacing: 2px;
+}
+.campo__etiqueta {
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--light-area);
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+span{
+    color: var(--span-color);
+}
+
+
+
+/*Botones*/
+button {
+    font-family: 'Quicksand';
+    letter-spacing: 2px;
+    padding: 10px 20px; 
+    margin: 15px 10px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: var(--button-bg-color); 
+    color: var(--light-area); 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+}
+button:active {
+    background-color: var(--button-active-bg-color);
+    transform: scale(.95);
+}
+
+/*Mis Productos*/
+.productos{
+    mrgin-right: 60px;
+}
+
+/* Footer */
+.footer {
+    background-image: url('img/Footer_AluraGeek.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer__rodape {
+    font-family: 'Quicksand';
+    letter-spacing: 2px;
+    background-color: rgba(4, 11, 39, 0.406);
+    text-align: center;
+    padding: 30px;
+    color: var(--light-area);
+}
