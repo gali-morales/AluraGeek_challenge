@@ -26,9 +26,9 @@
       },
       {
         "id": 5,
-        "nombre": "",
-        "precio": "$",
-        "imgUrl": ""
+        "nombre": "Droide aspiradora",
+        "precio": "$4560",
+        "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_5.jpeg?raw=true"
       },
       {
         "id": 6,

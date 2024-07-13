@@ -36,6 +36,12 @@ main{
     margin-top: .5em;
 }
 
+.mis_productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /*Botones*/
 .botones{
     display: flex;
