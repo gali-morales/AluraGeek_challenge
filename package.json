@@ -1,16 +1,15 @@
 {
   "name": "alurageek-challenge",
   "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "parcel src/index.html",
-  "build": "parcel build src/index.html"
-  },
-  "keywords": [],
-  "author": "Galilea Morales Cruz",
-  "license": "ISC",
   "description": "Página en la que puedes subir productos a un catálogo",
-  "devDependencies": {
-    "parcel": "^2.12.0"
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Galilea Morales",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
   }
 }

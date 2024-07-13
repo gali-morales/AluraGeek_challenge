@@ -54,7 +54,7 @@ main{
 /* Responsive */
 @media (max-width: 768px) {
     .header {
-        background-image: url('img/Banner_Mobil_AluraGeek.png');
+        background-image: url('../img/Banner_Mobil_AluraGeek.png');
     }
     main {
         display: flex;
