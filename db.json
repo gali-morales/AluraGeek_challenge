@@ -2,73 +2,73 @@
     "productos": [
       {
         "id": 1,
-        "nombre": "Cuadro: 'Los anillos de saturno'",
+        "titulo": "Cuadro: 'Los anillos de saturno'",
         "precio": "$2300",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_1.png?raw=true"
       },
       {
         "id": 2,
-        "nombre": "Caballete espacial",
+        "titulo": "Caballete espacial",
         "precio": "$900",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_2.png?raw=true"
       },
       {
         "id": 3,
-        "nombre": "Lámpara Astral",
+        "titulo": "Lámpara Astral",
         "precio": "$160",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_3.png?raw=true"
       },
       {
         "id": 4,
-        "nombre": "Nave espacial coleccionable",
+        "titulo": "Nave espacial coleccionable",
         "precio": "$540",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_4.png?raw=true"
       },
       {
         "id": 5,
-        "nombre": "Droide aspiradora",
+        "titulo": "Droide aspiradora",
         "precio": "$4560",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_5.jpeg?raw=true"
       },
       {
         "id": 6,
-        "nombre": "Cuadro: Manto espacial",
+        "titulo": "Cuadro: Manto espacial",
         "precio": "$1350",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_6.png?raw=true"
       },
       {
         "id": 7,
-        "nombre": "Edición Especial-Neil Moon",
+        "titulo": "Edición Especial-Neil Moon",
         "precio": "$3200",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_7.png?raw=true"
       },
       {
         "id": 8,
-        "nombre": "Juego de Cohetes",
+        "titulo": "Juego de Cohetes",
         "precio": "$450",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_8.png?raw=true"
       },
       {
         "id": 9,
-        "nombre": "Luz Nova",
+        "titulo": "Luz Nova",
         "precio": "$250",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_9.png?raw=true"
       },
       {
         "id": 10,
-        "nombre": "Tomo 3: Odisea Galáctica",
+        "titulo": "Tomo 3: Odisea Galáctica",
         "precio": "$90",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_10.png?raw=true"
       },
       {
         "id": 11,
-        "nombre": "Televisor antiguo",
+        "titulo": "Televisor antiguo",
         "precio": "$2300",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_11.png?raw=true"
       },
       {
         "id": 12,
-        "nombre": "Figura De Astronauta",
+        "titulo": "Figura De Astronauta",
         "precio": "$670",
         "imgUrl": "https://github.com/gali-morales/AluraGeek_challenge/blob/main/img/Img_12.png?raw=true"
       }

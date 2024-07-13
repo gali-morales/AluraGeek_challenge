@@ -1,31 +1,18 @@
-import { inicializarFormulario } from './formulario.js';
 import { servicesProducts } from './Productos.js';
 
-//Formulario
-document.addEventListener('DOMContentLoaded', () => {
-  inicializarFormulario();
-});
-
-//Productos
 const misProductos = document.querySelector("[data-producto]");
 const formulario = document.querySelector("[data-form]");
 
-function crearProductos(titulo, precio, imagen, id) {
+function crearProductos(id, titulo, precio, imgUrl) {
   const productoItem = document.createElement("div");
-  productoItem.classList.add("productoItem");
+  productoItem.classList.add("productosItem");
 
   productoItem.innerHTML = `
-    <div class="productosItem">
-      <img class="imagen-producto" src="${imagen}" alt="${titulo}">
-      <div class="titulo-producto">
-        <p>${titulo}</p>
-      </div>
-        <div class="precio-producto">
-          <p>$${precio}</p>
-        </div>
-        <div data-borrar class="boton-borrar" id="${id}">
-          <img src="img/delete-icon.png" alt="borrar" class="img-borrar"/>
-        </div>
+    <img class="imagen-producto" src="${imgUrl}" alt="${titulo}">
+      <h3 class="titulo-producto">${titulo}</h3>
+      <p class="precio-producto">${precio}</p>
+      <div data-borrar class="boton-borrar" id="${id}">
+      <img src="img/delete_icon.png" alt="borrar" class="img-borrar"/>
     </div>
   `;
 
@@ -41,18 +28,18 @@ function crearProductos(titulo, precio, imagen, id) {
 
   misProductos.appendChild(productoItem);
   return productoItem;
-
 }
 
 const render = async () => {
   try {
     const listaProductos = await servicesProducts.productList();
+    misProductos.innerHTML = ''; // Limpiar el contenedor antes de agregar productos
     listaProductos.forEach((producto) => {
       crearProductos(
+        producto.id,
         producto.titulo,
         producto.precio,
-        producto.imagen,
-        producto.id
+        producto.imgUrl
       );
     });
   } catch (error) {
@@ -60,38 +47,38 @@ const render = async () => {
   }
 };
 
+
 formulario.addEventListener("submit", async (event) => {
   event.preventDefault();
   const titulo = document.querySelector("[data-titulo]").value;
   const precio = document.querySelector("[data-precio]").value;
-  const imagen = document.querySelector("[data-imagen]").value;
+  const imgUrl = document.querySelector("[data-imagen]").value;
 
   try {
     const nuevoProducto = await servicesProducts.crearProdcuto(
       titulo,
       precio,
-      imagen
+      imgUrl
     );
     crearProductos(
+      nuevoProducto.id,
       nuevoProducto.titulo,
       nuevoProducto.precio,
-      nuevoProducto.imagen,
-      nuevoProducto.id
+      nuevoProducto.imgUrl
     );
   } catch (error) {
     console.error("Error al crear el producto:", error);
   }
 
-  
   limpiarForm();
 });
-
-render();
 
 const limpiarForm = () => {
   document.querySelector("[data-titulo]").value = "";
   document.querySelector("[data-precio]").value = "";
   document.querySelector("[data-imagen]").value = "";
 };
+
+render();
 
 

@@ -8,14 +8,16 @@ main{
     display: flex;
     flex: 1; 
     padding: 20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
 /*Formulario*/
+.form_productos{
+    margin-top: 45px;
+}
 .formulario{
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -36,15 +38,41 @@ main{
     margin-top: .5em;
 }
 
-.mis_productos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 /*Botones*/
 .botones{
     display: flex;
     justify-content: center;
 }
 
+/*Mis productos*/
+.mis_productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        background-image: url('img/Banner_Mobil_AluraGeek.png');
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos{
+        margin-top: 50px;
+    }
+    .mis_productos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .productosItem {
+        max-width: 150px;
+    }
+    .imagen-producto {
+        max-width: 150px;
+    }
+}
