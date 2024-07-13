@@ -1,17 +1,16 @@
 {
   "name": "alurageek-challenge",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch ./database/db.json --port 3000",
-    
+    "start": "parcel src/index.html",
+  "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "Galilea Morales Cruz",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "json-server": "^1.0.0-beta.0"
+  "description": "Página en la que puedes subir productos a un catálogo",
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }

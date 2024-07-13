@@ -1,0 +1,9 @@
+const o={productList:()=>fetch("https://66920b7726c2a69f6e9156a2.mockapi.io/Alurageek/Productos").then(o=>o.json()).catch(o=>console.log(o)),crearProdcuto:(o,r,e)=>fetch("https://66920b7726c2a69f6e9156a2.mockapi.io/Alurageek/Productos",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({titulo:o,precio:r,imgUrl:e})}).then(o=>o.json()).catch(o=>console.log(o)),borrarProducto:o=>fetch(`https://66920b7726c2a69f6e9156a2.mockapi.io/Alurageek/Productos/${o}`,{method:"DELETE"}).then(o=>o.json()).catch(o=>console.log(o))},r=document.querySelector("[data-producto]"),e=document.querySelector("[data-form]");function t(e,t,c,a){let l=document.createElement("div");return l.classList.add("productosItem"),l.innerHTML=`
+    <img class="imagen-producto" src="${a}" alt="${t}">
+      <h3 class="titulo-producto">${t}</h3>
+      <p class="precio-producto">${c}</p>
+      <div data-borrar class="boton-borrar" id="${e}">
+      <img src="img/delete_icon.png" alt="borrar" class="img-borrar"/>
+    </div>
+  `,l.querySelector("[data-borrar]").addEventListener("click",async()=>{try{await o.borrarProducto(e),l.remove()}catch(o){console.error("Error al borrar el producto:",o)}}),r.appendChild(l),l}const c=async()=>{try{let e=await o.productList();r.innerHTML="",e.forEach(o=>{t(o.id,o.titulo,o.precio,o.imgUrl)})}catch(o){console.error("Error al cargar los productos:",o)}};e.addEventListener("submit",async r=>{r.preventDefault();let e=document.querySelector("[data-titulo]").value,c=document.querySelector("[data-precio]").value,l=document.querySelector("[data-imagen]").value;try{let r=await o.crearProdcuto(e,c,l);t(r.id,r.titulo,r.precio,r.imgUrl)}catch(o){console.error("Error al crear el producto:",o)}a()});const a=()=>{document.querySelector("[data-titulo]").value="",document.querySelector("[data-precio]").value="",document.querySelector("[data-imagen]").value=""};c();
+//# sourceMappingURL=index.f876a5ef.js.map

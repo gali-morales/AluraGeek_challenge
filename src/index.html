@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+<title>AluraGeek</title>
+
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <header>
+            </header>
+    </section>
+
+    <main>
+        <section class="form_productos">
+            <h1 class="title">Agregar Producto:</h1>
+            <div class="formulario" data-form>
+                <form class="form-agregar-prod">
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nombre">Nombre</label>
+                    <input data-titulo name="nombre-producto" type="text" placeholder="Nombre  del Producto" class="nombre-producto form-input" minlength="3" required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nombre">Precio</label>
+                    <input data-precio name="precio-producto" type="number" placeholder="Precio" class="precio-producto form-input" required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nombre">Imagen</label>
+                    <input data-imagen name="url-img-producto" type="url" placeholder="URL de la imagen" class="url-img-producto form-input" required>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+                    <div data-button class="botones">
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                        <button class="boton-limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>        
+        <section class="productos">
+            <h1 class="title">Mis Productos</h1>
+            <div data-producto class="mis_productos ">
+                <div class="productosItem">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer">
+            <div class="footer__rodape">
+                 <p>Desarrollado por Galilea Morales Cruz</p>
+                <p>2024</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>
