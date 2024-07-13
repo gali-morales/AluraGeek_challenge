@@ -5,14 +5,15 @@ Bienvenido a AluraGeek, un catálogo de productos temáticos de tecnología y el
 ## Características
 
 - **Agregar Producto:** Utiliza el formulario "Agregar Productos" para ingresar nuevos productos especificando nombre, precio y la url de una imagen.
-- **Eliminar Producto:** Cada producto listado incluye un botón ![image](https://github.com/user-attachments/assets/3b28de87-4615-4601-81dc-98ceea997633)
+- **Eliminar Producto:** Cada producto listado incluye un botón ![image](https://github.com/user-attachments/assets/a4abf341-6ce5-4bee-aeb7-eeb39978528e)
+
  para eliminarlo de la lista.
 -  Se busco crear una experiencia de usuario única y atractiva.
 - **Desarrollador FrontEnd:** Galilea Morales Cruz
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 1]([screenshot1.png](https://drive.google.com/file/d/1G_FYad7bkoVvlmRUBAoFFaNkJRFi8SHJ/view?usp=sharing))
+![Captura de pantalla 1](https://drive.google.com/file/d/1G_FYad7bkoVvlmRUBAoFFaNkJRFi8SHJ/view?usp=sharing)
 
 ## Herramientas Utilizadas
 
